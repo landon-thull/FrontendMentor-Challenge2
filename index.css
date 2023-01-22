@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat'
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(30, 38%, 92%);
+}
+
+.attribution {
+    font-size: 0.75em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: hsl(0, 0%, 100%);
+    border-radius: 16px;
+    width: 600px;
+    max-width: 80%;
+    margin: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100%;
+    padding: 16px;
+}
+
+.product-category {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75em;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.product-name {
+    margin-top: 0;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-size: 1.75em;
+    margin-bottom: 0;
+}
+
+.product-description {
+    margin-bottom: 0px;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+}
+
+.pricing h2 {
+    margin-right: 1em;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color:hsl(158, 36%, 37%);
+}
+
+.pricing strike {
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+}
+
+.button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border-style: none;
+    padding: 16px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.button-primary:hover {
+    background: hsl(150, 28%, 20%);
+}
+
+.button-primary img {
+    margin-right: 8px;
+}
+
+.image-mobile {
+    border-radius: 16px 16px 0 0;
+}
+
+.image-desktop {
+    display: none;
+    object-fit: contain;
+}
+
+/* Desktop Media Query */
+
+@media (min-width: 1440px) {
+
+    .content {
+        padding: 16px 32px;
+    }
+
+    .product-category {
+        font-size: 0.9em;
+    }
+
+    .product-name {
+        font-size: 2em;
+    }
+
+    .product-description {
+        font-size: 0.9em;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+    .image-mobile {
+        display: none;
+    }
+
+    .image-desktop {
+        display: inline;
+        width: 50%;
+        border-radius: 16px 0 0 16px;
+    }
+}
